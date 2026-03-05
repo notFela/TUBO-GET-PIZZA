@@ -121,7 +121,7 @@
   }
 
   .foodTabs img {
-    @apply bg-tertiary w-30 h-30 p-1 rounded-full object-contain;
+    @apply bg-tertiary p-1 rounded-full object-contain;
   }
 
   .foodItemWrap {
@@ -131,6 +131,14 @@
   .foodItem {
     @apply hidden lg:hidden;
   }
+  .btn {
+    @apply inline-block px-8 py-3 rounded-lg font-medium text-center transition-all duration-300;
+  }
+
+  .btn--primary--b {
+    @apply mt-10 border-2 border-primary bg-transparent text-white hover:bg-primary hover:text-white;
+  }
+
   .foodItem.active {
     @apply block lg:block;
   }
@@ -160,4 +168,65 @@
   .text {
     @apply items-center text-center;
   }
+  .btn {
+    @apply inline-block px-8 py-3 font-medium text-center transition-all duration-300;
+  }
+
+  .btn--yellow {
+    @apply bg-secondary text-black hover:bg-secondary/80;
+  }
+
+  .btn--rounded {
+    @apply rounded-full;
+  }
+  .menuTab {
+    @apply font-bold  pr-3 cursor-pointer lg:px-10;
+  }
+
+  .menuTab:after {
+    @apply content-["_"] inline-block w-px h-10 bg-white left-4 lg:left-10 top-3 relative;
+  }
+  .menuTab:last-child:after {
+    @apply opacity-0;
+  }
+
+  .menuTab:last-child {
+    @apply border-none;
+  }
+  .menuTab.active {
+    @apply text-primary;
+  }
+}
+.ourStory {
+  @apply shadow-md mb-4 overflow-hidden transition-all duration-300;
+}
+.ourStory h4,
+.ourStory i {
+  @apply text-white;
+}
+.ourStory p {
+  @apply text-black;
+}
+.ourStory .year {
+  @apply bg-primary flex items-center justify-between px-4 py-3 cursor-pointer;
+}
+
+.ourStory .year h4 {
+  @apply text-lg font-semibold;
+}
+
+.ourStory .year i {
+  @apply transition-transform duration-300;
+}
+
+.ourStory .detail {
+  @apply max-h-0 overflow-hidden px-4 text-sm leading-relaxed transition-all duration-300;
+}
+
+.timeline.active .detail {
+  @apply max-h-screen pb-4;
+}
+
+.timeline.active .year i {
+  @apply rotate-180;
 }

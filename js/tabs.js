@@ -1,27 +1,19 @@
-const tabButtons = document.querySelectorAll(".tabs");
-const tabContents = document.querySelectorAll(".item");
+const tabs = document.querySelectorAll(".foodTabs");
+const items = document.querySelectorAll(".foodItem");
 
-tabButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    clearActiveTabs();
-    clearActiveContents();
-    button.classList.add("active");
+tabs.forEach((tab) => {
+  tab.addEventListener("click", function () {
+    // Remove active from all tabs
+    tabs.forEach((t) => t.classList.remove("active"));
 
-    const correspondingContent = document.querySelector(`#${button.id}-detail`);
-    if (correspondingContent) {
-      correspondingContent.classList.add("active");
-    }
+    // Hide all content
+    items.forEach((item) => item.classList.remove("active"));
+
+    // Add active to clicked tab
+    this.classList.add("active");
+
+    // Show matching content
+    const target = this.id + "-details";
+    document.getElementById(target).classList.add("active");
   });
 });
-
-function clearActiveTabs() {
-  tabButtons.forEach((button) => {
-    button.classList.remove("active");
-  });
-}
-
-function clearActiveContents() {
-  tabContents.forEach((button) => {
-    button.classList.remove("active");
-  });
-}

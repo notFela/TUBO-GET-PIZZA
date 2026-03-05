@@ -7,7 +7,11 @@
     <link rel="icon" href="../IMG/favicon.ico" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
     />
   </head>
   <body>
@@ -23,8 +27,8 @@
           <!-- nav -->
           <nav class="headerNav">
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="./about.html">About</a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
               <li><a href="./menu.html">Menu</a></li>
               <li><a href="#contacts">Contacts</a></li>
             </ul>
@@ -39,7 +43,6 @@
         </div>
       </div>
     </header>
-
     <!--banner text-->
     <section class="py-35 pb-0">
       <div class="container">
@@ -57,56 +60,126 @@
         </ul>
       </div>
     </section>
-    <!--hero banner-->
-    <section class="bg-secondary">
-      <div class="container md:px-40">
+    <!--banner-->
+    <section class="py-20">
+      <div class="container mx-auto px-6 lg:px-24">
         <!--wrapper-->
-        <div
-          class="grid grid-cols-1 gap-2 items-center md:grid-cols-2 md:flex flex-row-reverse"
-        >
-          <!--left-->
-          <div class="h-full w-full object-contain">
-            <img src="../IMG/banner-home.png" alt="delivery guy" />
-          </div>
-          <!--right-->
-          <div class="pb-10">
-            <h1 class="text-4xl pb-8 md:text-7xl">
-              <strong>HUNGRY?</strong> YOU'RE IN THE RIGHT PLACE
-            </h1>
-            <!--button-->
-            <a class="btn btn--red" href="#">VIEW OUR MENU</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- welcome to get pizza -->
-    <section class="py-12 md:py-20">
-      <div class="container">
-        <!-- wrapper -->
-        <div class="flex flex-col gap-18 md:grid grid-cols-2">
-          <div class="relative w-70 h-55 md:w-100 md:h-70 mx-auto">
-            <img
-              class="absolute top-0 left-0 w-50 h-35 md:w-100 md:h-70 object-cover rounded-2xl border-[5px] border-black shadow-lg"
-              src="../IMG/3chefs.png"
-              alt=""
-            />
-            <img
-              class="absolute -bottom-10 right-8 w-55 h-37.5 md:w-100 md:h-70 object-cover rounded-2xl border-[5px] border-black shadow-lg"
-              src="../IMG/food.png"
-              alt=""
-            />
-          </div>
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <!-- Video -->
           <div>
-            <h2>WELCOME TO GET PIZZA</h2>
-            <p class="text-primary font-bold my-5">
-              OUR CHEFS ARE WORKING 24/7 AND ARE READY TO ACCEPT VISITORS AND AT
-              ANY TIME OF THE DAY AND NIGHT
-            </p>
+            <iframe
+              class="w-full aspect-video shadow-lg"
+              src="https://www.youtube.com/embed/Y6MHE0-CQAs"
+              title="YouTube video player"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <!-- Text -->
+          <div>
+            <h1 class="text-4xl font-extrabold text-primary mb-6">
+              SERVING GET PIZZAS BY THE SINCE 1985
+            </h1>
             <p>
               We would like to take this opportunity to welcome you at our Pizza
               House. We are offering a warm, friendly atmosphere to share a meal
               with family and friends at any time of the day or evening.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--our story-->
+    <section class="story py-5">
+      <div class="container">
+        <h2 class="pb-8 flex justify-center">OUR STORY</h2>
+        <!--wrapper-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-50 md:w-300 mx-auto">
+          <!--left/top-->
+          <div class="ourStory--detail">
+            <!--1-->
+            <div class="ourStory">
+              <div class="year">
+                <h4>1985</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="detail">
+                <p>
+                  1985 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua enim ad minim veniam. ex ea commodo consequatuis irure.
+                  Dolor in reprehenderit in volue.
+                </p>
+              </div>
+            </div>
+
+            <!--2-->
+            <div class="ourStory">
+              <div class="year">
+                <h4>1990</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="detail">
+                <p>
+                  1990 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua enim ad minim veniam. ex ea commodo consequatuis irure.
+                  Dolor in reprehenderit in volue.
+                </p>
+              </div>
+            </div>
+
+            <!--3-->
+            <div class="ourStory">
+              <div class="year">
+                <h4>2000</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="detail">
+                <p>
+                  2000 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua enim ad minim veniam. ex ea commodo consequatuis irure.
+                  Dolor in reprehenderit in volue.
+                </p>
+              </div>
+            </div>
+
+            <!--4-->
+            <div class="ourStory">
+              <div class="year">
+                <h4>2010</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="detail">
+                <p>
+                  2010 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua enim ad minim veniam. ex ea commodo consequatuis irure.
+                  Dolor in reprehenderit in volue.
+                </p>
+              </div>
+            </div>
+
+            <!--5-->
+            <div class="ourStory">
+              <div class="year">
+                <h4>2021</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="detail">
+                <p>
+                  2021 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua enim ad minim veniam. ex ea commodo consequatuis irure.
+                  Dolor in reprehenderit in volue.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden md:block">
+            <img src="../IMG/meeting.png" alt="meeting" class="rounded-2xl" />
           </div>
         </div>
       </div>
@@ -307,7 +380,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -321,7 +393,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -335,7 +406,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -349,7 +419,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -363,7 +432,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -385,7 +453,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -399,7 +466,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -413,7 +479,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -427,7 +492,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -441,7 +505,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -471,7 +534,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -485,7 +547,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -499,7 +560,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -513,7 +573,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -527,7 +586,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -552,7 +610,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -566,7 +623,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -580,7 +636,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -594,7 +649,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -608,7 +662,6 @@
                         width="11.25"
                         viewBox="0 0 576 512"
                       >
-                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                         <path
                           fill="rgb(255, 212, 59)"
                           d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
@@ -926,6 +979,106 @@
         </div>
       </div>
     </section>
+    <!-- clients review -->
+    <section class="py-12 md:py-12">
+      <div class="container">
+        <h2 class="text-center justify-center mb-7">CLIENTS REVIEW</h2>
+        <div class="max-w-2xl mx-auto">
+          <!-- slider -->
+          <div class="slider text-center">
+            <!-- 1 -->
+            <div>
+              <img
+                src="../IMG/feedback.png"
+                class="w-32 h-32 rounded-full object-cover mx-auto"
+                alt="client"
+              />
+              <p class="mt-6">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quibusdam dicta beatae dolor in rem nulla fugiat vitae
+                ipsum culpa."
+              </p>
+              <p class="mt-4 font-semibold">Patrick Greenish</p>
+            </div>
+
+            <!-- 2 -->
+            <div>
+              <img
+                src="../IMG/feedback2.png"
+                class="w-32 h-32 rounded-full object-cover mx-auto"
+                alt="client"
+              />
+              <p class="mt-6">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quibusdam dicta beatae dolor in rem nulla fugiat vitae
+                ipsum culpa."
+              </p>
+              <p class="mt-4 font-semibold">Patrick Greenish</p>
+            </div>
+
+            <!-- 3 -->
+            <div>
+              <img
+                src="../IMG/feedback3.png"
+                class="w-32 h-32 rounded-full object-cover mx-auto"
+                alt="client"
+              />
+              <p class="mt-6">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quibusdam dicta beatae dolor in rem nulla fugiat vitae
+                ipsum culpa."
+              </p>
+              <p class="mt-4 font-semibold">Patrick Greenish</p>
+            </div>
+
+            <!-- 4 -->
+            <div>
+              <img
+                src="../IMG/feedback4.png"
+                class="w-32 h-32 rounded-full object-cover mx-auto"
+                alt="client"
+              />
+              <p class="mt-6">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quibusdam dicta beatae dolor in rem nulla fugiat vitae
+                ipsum culpa."
+              </p>
+              <p class="mt-4 font-semibold">Patrick Greenish</p>
+            </div>
+
+            <!-- 5 -->
+            <div>
+              <img
+                src="../IMG/feedback5.png"
+                class="w-32 h-32 rounded-full object-cover mx-auto"
+                alt="client"
+              />
+              <p class="mt-6">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quibusdam dicta beatae dolor in rem nulla fugiat vitae
+                ipsum culpa."
+              </p>
+              <p class="mt-4 font-semibold">Patrick Greenish</p>
+            </div>
+
+            <!-- 6 -->
+            <div>
+              <img
+                src="../IMG/feedback6.png"
+                class="w-32 h-32 rounded-full object-cover mx-auto"
+                alt="client"
+              />
+              <p class="mt-6">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati quibusdam dicta beatae dolor in rem nulla fugiat vitae
+                ipsum culpa."
+              </p>
+              <p class="mt-4 font-semibold">Patrick Greenish</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- cta -->
     <section class="py-5 md:py-0 bg-primary md:px-40">
       <div class="container">
@@ -985,7 +1138,10 @@
         <p class="text text-primary">0123456789</p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="../js/toggle-menu.js"></script>
     <script src="../js/tabs.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/story.js"></script>
   </body>
 </html>
