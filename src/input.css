@@ -207,6 +207,7 @@
 .ourStory p {
   @apply text-black;
 }
+
 .ourStory .year {
   @apply bg-primary flex items-center justify-between px-4 py-3 cursor-pointer;
 }
@@ -223,10 +224,10 @@
   @apply max-h-0 overflow-hidden px-4 text-sm leading-relaxed transition-all duration-300;
 }
 
-.timeline.active .detail {
+.ourStory.active .detail {
   @apply max-h-screen pb-4;
 }
 
-.timeline.active .year i {
+.ourStory.active .year i {
   @apply rotate-180;
 }

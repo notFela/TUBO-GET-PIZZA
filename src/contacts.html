@@ -1,0 +1,163 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Pizza - Tubo</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="icon" href="../IMG/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--header-->
+    <header class="py-7 fixed shadow-md w-full z-50">
+      <div class="container">
+        <!--wrapper-->
+        <div class="flex justify-between items-center">
+          <!-- logo -->
+          <div class="flex items-center gap-2">
+            <img class="h-18" src="../IMG/LOGO.png" alt="logo" />
+          </div>
+          <!-- nav -->
+          <nav class="headerNav">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="./contacts.html">Contacts</a></li>
+            </ul>
+          </nav>
+          <!-- toggle menu -->
+          <div class="toggleMenu">
+            <span></span>
+            <span></span>
+          </div>
+          <!-- transparent -->
+          <div class="transparent"></div>
+        </div>
+      </div>
+    </header>
+
+    <!--banner text-->
+    <section class="py-35 pb-0">
+      <div class="container">
+        <!-- details -->
+        <ul
+          class="text-primary flex justify-center items-center gap-1 text-center md:text-center"
+        >
+          <li>
+            <i class="fa-solid fa-bullhorn"></i>
+            <small class="font-bold"
+              >This website provides information about our store. Online
+              transactions are coming soon.</small
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- location -->
+    <section class="py-5">
+      <div class="max-w-5xl mx-auto px-4 md:px-6 text-center">
+        <div>
+          <iframe
+            class="w-full h-180 md:h-96"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.372058564885!2d121.34546637586834!3d14.055193590195447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5cd2d6006569%3A0x9075b8a72b9d5fb0!2sFrontline%20Business%20Solutions%2C%20Inc.!5e0!3m2!1sen!2sph!4v1772760229230!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+            style="border: 0" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade" ></iframe
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
+    <section class="bg-secondary py-20">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-12">
+          GET IN TOUCH
+        </h2>
+
+        <form class="space-y-4">
+          <!-- first & last name -->
+          <div class="grid grid-cols-2 gap-3">
+            <input
+              type="text"
+              placeholder="First Name"
+              class="w-full bg-white px-2 py-4 rounded-lg outline-none"
+            />
+
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="w-full bg-white px-2 py-4 rounded-lg outline-none"
+            />
+          </div>
+
+          <!-- email -->
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="w-full bg-white px-5 py-4 rounded-xl outline-none"
+          />
+
+          <!-- subject -->
+          <input
+            type="text"
+            placeholder="Subject"
+            class="w-full bg-white px-5 py-4 rounded-xl outline-none"
+          />
+
+          <!-- message -->
+          <textarea
+            rows="4"
+            placeholder="Your Message"
+            class="w-full bg-white px-5 py-4 rounded-xl outline-none resize-none"
+          ></textarea>
+
+          <!-- button -->
+          <div class="text-center pt-6">
+            <a class="btn btn--red font-semibold" href="#">SUBMIT FORM</a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container md:px-40">
+        <!-- wrapper -->
+        <div class="footerWrapper">
+          <img src="../IMG/LOGO.png" alt="logo" />
+          <ul class="footerDetail">
+            <li>
+              <h4>ADDRESS</h4>
+              <p>570 8th Ave, New York, NY</p>
+              <p>10018 United States</p>
+            </li>
+            <li>
+              <h4>BOOK A TABLE</h4>
+              <p>Dogfood Och Sliders Foodtruck.</p>
+              <p>Under Om Oss Kan Ni Lasa</p>
+            </li>
+            <li>
+              <h4>OPENING HOURS</h4>
+              <p>Monday - Friday</p>
+              <p>10:00 AM - 11:00PM</p>
+            </li>
+          </ul>
+        </div>
+        <p class="text text-primary">0123456789</p>
+      </div>
+    </footer>
+    <script src="../js/toggle-menu.js"></script>
+    <script src="../js/tabs.js"></script>
+  </body>
+</html>
